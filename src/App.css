@@ -1,38 +1,117 @@
-.App {
-  text-align: center;
+.panel-block {
+    justify-content: space-between;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.panel-block p {
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.panel-icon {
+    margin-right: 0;
+    cursor: pointer;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.fullwidth {
+    width: 100%;
 }
 
-.App-link {
-  color: #61dafb;
+.section {
+    padding: 2rem 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.table tr td:nth-child(2),
+.table tr td:nth-child(3) {
+    width: 100px;
+}
+
+tr.completed {
+    opacity: 0.5;
+}
+
+tr.completed td:first-child {
+    text-decoration: line-through;
+}
+
+.notification {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    max-width: 300px;
+}
+
+.card-header {
+    background: hsl(171, 100%, 41%);
+}
+
+.header {
+    background-color: hsl(171, 100%, 41%);
+    text-align: center;
+    padding: 20px 0;
+}
+/* &--fixed {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+    }
+  
+    &--transparent {
+      background-color: rgba($bg-color, 0.9);
+    }
+   */
+/* .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    } */
+
+/* &__brand {
+  
+      h1 {
+        font-size: 20px;
+  
+        a {
+          color: $text-color;
+        }
+      }
+    } */
+
+.header__nav_lang {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.selected {
+    width: 50px;
+    background-color: hsl(171, 100%, 41%);
+    color: black;
+    padding: 5px;
+    font-weight: 700;
+    font-size: 12px;
+    border-radius: 2px;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 5px);
+    left: 0;
+    background-color: hsl(171, 100%, 41%);
+    border-radius: 2px;
+    padding: 5px 0;
+}
+
+li {
+    text-align: center;
+    font-size: 12px;
+    padding: 5px;
+    cursor: pointer;
+    z-index: 10;
+}
+
+ul.dropdown > li:hover{
+    color: black;
+    
 }
